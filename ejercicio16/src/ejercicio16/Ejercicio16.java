@@ -27,7 +27,7 @@ public class Ejercicio16 {
             System.out.println("ingrese la contraseña");
             intentoDeContrasenia = sc.nextLine();
             if (intentoDeContrasenia.equals(contrasenia)) {
-                System.out.println("buena gato");
+                System.out.println("buena gatin");
             } else {
                 System.out.println("la comiste");
                 numDeIntentos++;
