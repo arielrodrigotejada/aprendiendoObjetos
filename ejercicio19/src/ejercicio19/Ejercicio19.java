@@ -18,11 +18,19 @@ public class Ejercicio19 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+       int numero = 0;
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
-        System.out.println("tirame un numero entero positivo");
-        int numero = sc.nextInt();
+       do{
+           System.out.println("tirame un numero entero positivo");
        
-        }
+         numero = sc.nextInt();
+       }while(numero<0);
+         String numeroString = String.valueOf(numero);
+         
+         System.out.println(numeroString.length());
+        
+       
+    
         
     }
     
