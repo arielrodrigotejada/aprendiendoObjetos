@@ -16,6 +16,13 @@ public class Personaje {
     private int manaOenergia = 0;
     private String rol = "";
 
+    public Personaje(String nombre, int HP, int manaOenergia, String rol) {
+        this.nombre = nombre;
+        this.HP = HP;
+        this.manaOenergia = manaOenergia;
+        this.rol = rol;
+    }
+
     public void setNombre(String nombreCampeon) {
         this.nombre = nombreCampeon;
     }
@@ -35,13 +42,19 @@ public class Personaje {
     public void setManaOenergia(int naftaDelCampeon) {
         this.manaOenergia = naftaDelCampeon;
     }
-    public int getManaOenergia(){
+
+    public int getManaOenergia() {
         return manaOenergia;
     }
-    public void setRol(String rolDelCampeon){
+
+    public void setRol(String rolDelCampeon) {
         this.rol = rolDelCampeon;
     }
-    public String getRol(){
+
+    public String getRol() {
         return rol;
     }
+
+   
+    
 }
