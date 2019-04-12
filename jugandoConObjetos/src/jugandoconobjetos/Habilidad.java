@@ -21,17 +21,46 @@ public class Habilidad {
         this.daño = daño;
         this.vidaOescudo = vidaOescudo;
         this.cd = cd;
+        
+        
+        
     }
-     public void Q() {
-         System.out.println("Usaste la Q ,hiciste "+this.daño+" diste "+this.vidaOescudo+" de vida o escudo y gastaste "+this.costo+" de lo que sea que uses y ahora esperate "+this.cd+" segundos para tirarla de vuelta");
-         }
-     public void W() {
-         System.out.println("Usaste la W ,hiciste "+this.daño+" diste "+this.vidaOescudo+" de vida o escudo y gastaste "+this.costo+" de lo que sea que uses y ahora esperate "+this.cd+" segundos para tirarla de vuelta");
-         }
-     public void E() {
-         System.out.println("Usaste la E ,hiciste "+this.daño+" diste "+this.vidaOescudo+" de vida o escudo y gastaste "+this.costo+" de lo que sea que uses y ahora esperate "+this.cd+" segundos para tirarla de vuelta");
-         }
-     public void R() {
-         System.out.println("Usaste la R ,hiciste "+this.daño+" diste "+this.vidaOescudo+" de vida o escudo y gastaste "+this.costo+" de lo que sea que uses y ahora esperate "+this.cd+" segundos para tirarla de vuelta");
-         }
+    
+    
+    
+    
+    
+
+    public int getCosto() {
+        return costo;
+    }
+
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
+
+    public int getDaño() {
+        return daño;
+    }
+
+    public void setDaño(int daño) {
+        this.daño = daño;
+    }
+
+    public int getVidaOescudo() {
+        return vidaOescudo;
+    }
+
+    public void setVidaOescudo(int vidaOescudo) {
+        this.vidaOescudo = vidaOescudo;
+    }
+
+    public int getCd() {
+        return cd;
+    }
+
+    public void setCd(int cd) {
+        this.cd = cd;
+    }
+
 }

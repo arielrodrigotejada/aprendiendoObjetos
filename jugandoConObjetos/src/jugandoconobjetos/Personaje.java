@@ -14,13 +14,25 @@ public class Personaje {
     private String nombre = "";
     private int HP = 0;
     private int manaOenergia = 0;
-    private String rol = "";
+    private JugandoConObjetos.ClaseCampeon rol = null;
+    private Habilidad q = null;
+    private Habilidad w = null;
+    private Habilidad e = null;
+    private Habilidad r = null;
 
-    public Personaje(String nombre, int HP, int manaOenergia, String rol) {
+    public Personaje(String nombre, int HP, int manaOenergia, JugandoConObjetos.ClaseCampeon rol, Habilidad q, Habilidad w, Habilidad e, Habilidad r) {
         this.nombre = nombre;
         this.HP = HP;
         this.manaOenergia = manaOenergia;
         this.rol = rol;
+        this.q = q;
+        this.w = w;
+        this.e = e;
+        this.r = r;
+    }
+
+    public Personaje() {
+
     }
 
     public void setNombre(String nombreCampeon) {
@@ -47,14 +59,44 @@ public class Personaje {
         return manaOenergia;
     }
 
-    public void setRol(String rolDelCampeon) {
+    public void setRol(JugandoConObjetos.ClaseCampeon rolDelCampeon) {
         this.rol = rolDelCampeon;
     }
 
-    public String getRol() {
+    public JugandoConObjetos.ClaseCampeon getRol() {
         return rol;
     }
 
-   
+    public Habilidad getQ() {
+        return q;
+    }
+
+    public void setQ(Habilidad q) {
+        this.q = q;
+    }
+
+    public Habilidad getW() {
+        return w;
+    }
+
+    public void setW(Habilidad w) {
+        this.w = w;
+    }
+
+    public Habilidad getE() {
+        return e;
+    }
+
+    public void setE(Habilidad e) {
+        this.e = e;
+    }
+
+    public Habilidad getR() {
+        return r;
+    }
+
+    public void setR(Habilidad r) {
+        this.r = r;
+    }
     
 }
